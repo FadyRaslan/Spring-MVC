@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="windows-1256">
-<title>profile-page</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>name : fady khaled raslan</h1>
-<h1>age : 24</h1>
+<h1>HI</h1>
+<h3>username : ${param.user}</h3>
+<h3>password : ${param.pass}</h3>
 </body>
 </html>

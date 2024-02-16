@@ -6,6 +6,7 @@ import org.apache.coyote.http11.Http11AprProtocol;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller     // this inherit from @component so it consider bean and it also show that it's a controller 
 public class Maincontroller {
@@ -26,10 +27,9 @@ public class Maincontroller {
 	}
     
     @RequestMapping("/loginprocess")
-    public String formprocess(HttpServletRequest request , Model model) {
-    	//get data from my form and store them
-    	String userName=request.getParameter("user");
-    	String password=request.getParameter("pass");
+    public String formprocess(@RequestParam("user")String userName,@RequestParam("pass")String password, Model model) {
+    	
+    	
     	////////////////////doing process in data ///////////////////////
     	String newUserName = "(username = " + userName.toUpperCase() + ")";
     	String newPassword="(password = " + password + ")";
@@ -40,3 +40,7 @@ public class Maincontroller {
 		return "main";
 	}
 }
+
+//get data from my form and store them
+/*String userName=request.getParameter("user");
+String password=request.getParameter("pass"); */ 

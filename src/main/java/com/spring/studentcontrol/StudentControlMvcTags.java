@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.spring.model.Student;
 
 @Controller
-@RequestMapping("/student-mvc-tags")               //default( at beggoning of link )
+@RequestMapping("/student-mvc-tags")               //default( at begining of link )
 public class StudentControlMvcTags {
 	
-	@RequestMapping("/student-mvc-tags")
+	@RequestMapping("/Student-mvc-tags")
 	public String StudentFormMvcTgs(Model model) {
 		Student student=new Student();
 		model.addAttribute("student",student);

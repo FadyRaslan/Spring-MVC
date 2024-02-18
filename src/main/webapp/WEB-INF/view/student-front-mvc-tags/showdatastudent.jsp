@@ -10,6 +10,7 @@
 
  <p>FirstName : ${student.fname }</p>
  <p>LastName : ${student.lname }</p>
- <p>Age: ${student.age }</p>
+ <p>Age : ${student.age }</p>
+ <p>Country : ${student.country }</p>
 </body>
 </html>

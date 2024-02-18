@@ -11,7 +11,7 @@ import com.spring.model.Student;
 @RequestMapping("/student-mvc-tags")               //default( at begining of link )
 public class StudentControlMvcTags {
 	
-	@RequestMapping("/Student-mvc-tags")
+	@RequestMapping("/student-mvc-tags")
 	public String StudentFormMvcTgs(Model model) {
 		Student student=new Student();
 		model.addAttribute("student",student);

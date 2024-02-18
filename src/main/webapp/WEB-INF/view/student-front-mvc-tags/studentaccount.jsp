@@ -14,11 +14,8 @@
 FirstName <f:input path="fname"/>
 LastName <f:input path="lname"/>
 Age <f:input path="age"/>
-Country <f:select path="country" >
-<f:option value="Egypt" label="EG"></f:option>
-<f:option value="Brazel"label="BR"></f:option>
-<f:option value="Germany" label="GE"></f:option>
-
+Country <f:select path="country">       <!--defined into Student file   --> 
+<f:options items="${student.countryOptions}"/>
 </f:select>
 <input type="submit" value="Done"> 
 </f:form>

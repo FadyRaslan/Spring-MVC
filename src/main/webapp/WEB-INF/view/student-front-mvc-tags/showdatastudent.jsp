@@ -12,5 +12,6 @@
  <p>LastName : ${student.lname }</p>
  <p>Age : ${student.age }</p>
  <p>Country : ${student.country }</p>
+ <p>Language : ${student.language }</p>
 </body>
 </html>

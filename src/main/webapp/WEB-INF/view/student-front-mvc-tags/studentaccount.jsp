@@ -17,7 +17,19 @@ Age <f:input path="age"/>
 Country <f:select path="country">       <!--defined into Student file   --> 
 <f:options items="${student.countryOptions}"/>
 </f:select>
-<input type="submit" value="Done"> 
+ 
+
+Choose your language :
+<f:radiobutton path="language" value="Java"/>Java
+<f:radiobutton path="language" value="C++"/>C++
+<f:radiobutton path="language" value="C#"/>C#
+<f:radiobutton path="language" value="PHP"/>PHP
+<br>
+<input type="submit" value="Done">
+
+
+
+
 </f:form>
 
 

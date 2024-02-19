@@ -14,6 +14,8 @@ public class Student {
 	
 	private HashMap<String, String> countryOptions;
 	
+	private String language;
+	
 
 	public Student() {
 		countryOptions=new HashMap<>();
@@ -24,6 +26,18 @@ public class Student {
 	}
 
 	
+
+	public String getLanguage() {
+		return language;
+	}
+
+
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+
 
 	public String getCountry() {
 		return country;

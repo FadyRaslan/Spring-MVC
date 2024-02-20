@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=windows-1256"
     pageEncoding="windows-1256"%>
+  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>   <!-- allow to use c: to use for each loop  -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,5 +15,16 @@
  <p>Age : ${student.age }</p>
  <p>Country : ${student.country }</p>
  <p>Language : ${student.language }</p>
+ 
+ 
+  <p>Players :
+  
+  <c:forEach var="pl" items="${student.players}">
+		${pl}
+	</c:forEach>
+   
+   
+   </p>
+ 
 </body>
 </html>

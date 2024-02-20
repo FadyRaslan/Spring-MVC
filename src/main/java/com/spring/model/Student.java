@@ -2,7 +2,9 @@ package com.spring.model;
 
 import java.util.HashMap;
 
+
 public class Student {
+	
 	
 	private String fname;
 	
@@ -15,6 +17,8 @@ public class Student {
 	private HashMap<String, String> countryOptions;
 	
 	private String language;
+	
+	private String []players;
 	
 
 	public Student() {
@@ -35,6 +39,20 @@ public class Student {
 
 	public void setLanguage(String language) {
 		this.language = language;
+	}
+	
+	 
+
+
+
+	public String[] getPlayers() {
+		return players;
+	}
+
+
+
+	public void setPlayers(String[] players) {
+		this.players = players;
 	}
 
 

@@ -12,11 +12,16 @@
 
 <f:form action="processmvctags" modelAttribute="student">
 FirstName <f:input path="fname"/>
+<br>
 LastName <f:input path="lname"/>
+<br>
 Age <f:input path="age"/>
+<br>
 Country <f:select path="country">       <!--defined into Student file   --> 
 <f:options items="${student.countryOptions}"/>
+
 </f:select>
+<br>
  
 
 Choose your language :
@@ -24,6 +29,12 @@ Choose your language :
 <f:radiobutton path="language" value="C++"/>C++
 <f:radiobutton path="language" value="C#"/>C#
 <f:radiobutton path="language" value="PHP"/>PHP
+<br>
+Choose Player :
+<f:checkbox path="players" value="Messi"/>Messi
+<f:checkbox path="players" value="Cr7"/>Cr7
+<f:checkbox path="players" value="Salah"/>Salah
+
 <br>
 <input type="submit" value="Done">
 

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.model.Student;
 
-import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/student-mvc-tags")               //default( at begining of link )
@@ -23,12 +22,12 @@ public class StudentControlMvcTags {
 	}
 	
 	@RequestMapping("/processmvctags")
-    public String ShowInfo(@Valid@ModelAttribute("student")Student student , BindingResult bindingResult) {
+    public String ShowInfo(@javax.validation.Valid@ModelAttribute("student")Student student , BindingResult bindingResult) {
 		
 		if(bindingResult.hasErrors()) {
 			return  "student-front-mvc-tags/studentaccount";
 		}else {
-			return  "student-front-mvc-tags/showdatastudent";
+			return   "student-front-mvc-tags/showdatastudent";
 		}
 			
 			

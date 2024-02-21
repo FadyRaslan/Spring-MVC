@@ -3,9 +3,14 @@ package com.spring.model;
 import java.util.HashMap;
 
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
+
 public class Student {
 	
-	
+	@NotNull(message = "reqired")
+	@Size(min =1 , message = "reqired" )
 	private String fname;
 	
 	private String lname;

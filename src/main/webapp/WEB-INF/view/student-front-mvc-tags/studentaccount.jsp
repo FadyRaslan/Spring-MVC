@@ -12,6 +12,7 @@
 
 <f:form action="processmvctags" modelAttribute="student">
 FirstName <f:input path="fname"/>
+<f:errors path="fname"></f:errors>
 <br>
 LastName <f:input path="lname"/>
 <br>

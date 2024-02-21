@@ -2,10 +2,13 @@ package com.spring.studentcontrol;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.model.Student;
+
+import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/student-mvc-tags")               //default( at begining of link )
@@ -20,8 +23,15 @@ public class StudentControlMvcTags {
 	}
 	
 	@RequestMapping("/processmvctags")
-    public String ShowInfo(@ModelAttribute("student")Student student) {
-		return "student-front-mvc-tags/showdatastudent";
+    public String ShowInfo(@Valid@ModelAttribute("student")Student student , BindingResult bindingResult) {
+		
+		if(bindingResult.hasErrors()) {
+			return  "student-front-mvc-tags/studentaccount";
+		}else {
+			return  "student-front-mvc-tags/showdatastudent";
+		}
+			
+			
 	}
 
 }

@@ -2,17 +2,24 @@ package com.spring.model;
 
 import java.util.HashMap;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 
 
 
 public class Student {
 	
-	@javax.validation.constraints.NotNull(message = "reqired")
+	@javax.validation.constraints.NotNull(message = "required")
 	@javax.validation.constraints.Size(min =1 , message = "reqired" )
 	private String fname;
 	
 	private String lname;
 	
+	@NotNull(message = "required")
+	@Max(value = 50 , message = "must be 50 or younger ")
+	@Min(value = 20 , message = "must be 20 or older ")
 	private String age;
 	
 	private String country ;

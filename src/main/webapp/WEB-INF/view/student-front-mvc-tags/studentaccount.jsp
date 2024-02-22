@@ -24,6 +24,7 @@ FirstName <f:input path="fname"/>
 LastName <f:input path="lname"/>
 <br>
 Age <f:input path="age"/>
+<f:errors path="age" cssClass="error"></f:errors>
 <br>
 Country <f:select path="country">       <!--defined into Student file   --> 
 <f:options items="${student.countryOptions}"/>

@@ -23,6 +23,18 @@ public class Student {
 	@Min(value = 20 , message = "must be 20 or older ")
 	private String age;
 	
+	private Integer code;
+	
+	public Integer getCode() {
+		return code;
+	}
+
+
+
+	public void setCode(Integer code) {
+		this.code = code;
+	}
+
 	@NotNull(message = "required")
 	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", message = "Invalid Email")      // fixed email regexp from google
 	private String email;

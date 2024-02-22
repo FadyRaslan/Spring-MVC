@@ -26,6 +26,9 @@ LastName <f:input path="lname"/>
 Age <f:input path="age"/>
 <f:errors path="age" cssClass="error"></f:errors>
 <br>
+Code <f:input path="code"/>
+<f:errors path="code" cssClass="error"></f:errors>
+<br>
 Email <f:input path="email"/>
 <f:errors path="email" cssClass="error"></f:errors>
 <br>

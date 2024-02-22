@@ -13,6 +13,7 @@
  <p>FirstName : ${student.fname }</p>
  <p>LastName : ${student.lname }</p>
  <p>Age : ${student.age }</p>
+ <p>Code : ${student.code }</p>
  <p>Email : ${student.email }</p>
  <p>Country : ${student.country }</p>
  <p>Language : ${student.language }</p>
